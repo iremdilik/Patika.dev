@@ -1,0 +1,17 @@
+create table employee (
+	id integer,
+	name varchar(50),
+	birthday date,
+	email varchar(100)
+);
+
+-- verileri mackaroo kullanarak ekledim
+
+update employee
+set name = 'Ayşe',
+	email = 'ayse@gmail.com',
+	birthday = '1998-10-12'
+where id = 2;
+
+delete from employee
+where id = 15;
